@@ -18,6 +18,8 @@ export const Navbar = () => {
     <nav>
       <div className="logo"><Link to="/">Matt Guptill Music</Link></div>
 
+      
+
       <div className="menu" onClick={handleClick}>{menuOpen ? <FaWindowClose size={45} /> : <FaBars size={45}/> }</div>
 
       <ul className={menuOpen ? "open" : ""}>
@@ -57,19 +59,28 @@ export const Navbar = () => {
       nav a  {
         font-size: 35px;
         text-decoration: none;
-        color: white;
+        color: white !important;
         transition: all linear 200ms;
+      }
+
+      a:link, a:visited{
+        text-decoration: none;
       }
 
       .logo a {
         font-size: 45px;
-        
+        color: green;
+        text-decoration: none!important
         
       }
 
       nav li {
         padding-left: 2.5rem;
         
+      }
+
+      nav div a {
+        color: red;
       }
 
       nav .menu {
@@ -95,7 +106,7 @@ export const Navbar = () => {
 
        nav {
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         padding: 0;
        }
 
