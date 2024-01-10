@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaWindowClose  } from "react-icons/fa";
 import { useState } from "react";
@@ -43,10 +43,11 @@ export const Navbar = () => {
         justify-content: space-between;
         align-items: center;
         padding: 0 2rem;
+        height: 60px;
         background-color: #092635;
         position: sticky;
         top: 0;
-        z-index: 999;
+        z-index: 99;
       }
       nav ul {
         display: flex;
@@ -62,7 +63,7 @@ export const Navbar = () => {
 
       .logo a {
         font-size: 45px;
-        font-weight: 600;
+        
         
       }
 
